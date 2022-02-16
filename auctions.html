@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Medora | Auctions</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="all,follow">
+        <!-- Google fonts-->
+        <link rel="stylesheet" href="static/css/css2.css">
+        <!-- Line awesome-->
+        <link rel="stylesheet" href="static/css/line-awesome.min.css">
+        <!-- Choices.js-->
+        <link rel="stylesheet" href="static/css/choices.min.css">
+        <!-- Dropzone-->
+        <link rel="stylesheet" href="static/css/dropzone.css">
+        <!-- Swiper.js-->
+        <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+        <!-- Theme stylesheet-->
+        <link rel="stylesheet" href="static/css/style.default.css" id="theme-stylesheet">
+        <!-- Custom stylesheet - for your changes-->
+        <link rel="stylesheet" href="static/css/custom.css">
+
+        <!-- Tweaks for older IEs-->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+            <div class="container">
+                <!-- Navbar Brand -->
+                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="static/picture/logo.svg" alt="CR" width="140"></a>
+
+                <!-- Navbar Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Collapse -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-lg-row align-items-lg-center">
+                        <!-- Navigation Item -->
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                        <!-- Navigation Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="exploreDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end fade-down" aria-labelledby="exploreDropdown">
+                                <li><a class="dropdown-item" href="explore.html">Explore 1</a></li>
+                                <li><a class="dropdown-item" href="explore-2.html">Explore 2</a></li>
+                                <li><a class="dropdown-item" href="explore-3.html">Explore 3</a></li>
+                            </ul>
+                        </li>
+                        <!-- Navigation Dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end fade-down" aria-labelledby="pagesDropdown">
+                                <li><a class="dropdown-item" href="">Auctions</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                <li><a class="dropdown-item" href="author.html">Author</a></li>
+                                <li><a class="dropdown-item" href="wallet.html">Wallet</a></li>
+                                <li><a class="dropdown-item" href="create.html">Create</a></li>
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            </ul>
+                        </li>
+                        <!-- Navigation Item -->
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="">Auctions</a></li>
+                        <!-- Navigation Item -->
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+                        <!-- Navigation Item -->
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn btn-gradient-primary btn-sm px-3 d-lg-flex align-items-center" href="wallet.html"> <i class="las la-wallet me-2 transform-none"></i>Connect wallet </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+
+        <!-- HERO SECTION-->
+        <section class="py-5 bg-dark position-relative">
+            <div id="particles-js"></div>
+            <div class="container py-5 mt-5 z-index-20">
+                <h1 class="text-center">Live Auctions</h1>
+                <!-- Breadcrumb-->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item">
+                            <a class="text-decoration-none d-flex align-items-center" href="#"> <i class="las la-home la-sm me-1"></i>Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Live Auctions</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+
+
+        <!-- AUCTIONS SECTION-->
+        <section class="py-5">
+            <div class="container py-5">
+                <div class="row mb-5">
+
+                    <!-- Trending Auction-->
+                    <div class="col-xl-7 col-md-8 mx-auto mb-4">
+                        <header class="mb-5 text-center">
+                            <h2>Trending Auction</h2>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, illo est ad modi incidunt tenetur fugit nam doloribus porro facere.</p>
+                        </header>
+
+                        <!-- Trending Action -->
+                        <div class="card rounded shadow-lg">
+                            <div class="card-body p-3 position-relative">
+                                <!-- Auction Author-->
+                                <div class="position-absolute top-0 end-0 translate-middle">
+                                    <div class="position-relative">
+                                        <img class="img-fluid rounded-circle" src="static/picture/author-1.jpg" alt="..." width="45">
+                                        <span class="icon bg-primary text-white position-absolute top-50 start-100 translate-middle"><i class="las la-check-double"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center gy-4">
+                                    <!-- Auction Image  -->
+                                    <div class="col-lg-6"><img class="img-fluid rounded w-100" src="static/picture/item-1.jpg" alt=""></div>
+                                    <!-- Auction Info -->
+                                    <div class="col-lg-6">
+                                        <p class="h5 fw-bold mb-3"><a class="text-reset" href="item.html"> Kral</a></p>
+                                        <p class="text-muted text-sm mb-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                        <p class="text-sm text-muted fw-normal mb-2 d-flex align-items-center">
+                                            <i class="fab fa-bitcoin me-2 fa-fw"></i><span>Price: </span><span class="text-primary ms-2">0.08 ETH</span><span class="ms-2">1/20</span>
+                                        </p>
+                                        <!-- Auction Counter -->
+                                        <div class="p-2 counter d-flex align-items-center justify-content-center text-center counter-auc" data-date="14-12-2021" data-time="12:00">
+                                            <div class="day counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                            <div class="hour counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                            <div class="min counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                            <div class="sec counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                        </div>
+                                        <!-- Separator -->
+                                        <div class="my-3 pt-1 bg-body rounded-pill"></div>
+                                        <!-- Place a bid -->
+                                        <a class="btn btn-primary btn-sm w-100" href="">Place your bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Auctions Header-->
+                <header class="mb-5 text-center">
+                    <div class="row">
+                        <div class="col-lg-7 mx-auto">
+                            <h2>Live Auctions</h2>
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, illo est ad modi incidunt tenetur fugit nam doloribus porro facere.</p>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Auctions Grid-->
+                <div class="row gy-4 mb-5">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+
+                        <!-- Live Action -->
+                        <div class="card rounded shadow-sm">
+                            <div class="card-body p-3 position-relative">
+                                <div class="position-relative mb-4 shadow">
+                                    <!-- Author Image -->
+                                    <div class="author z-index-20">
+                                        <img class="img-fluid rounded-circle" src="static/picture/author-1.jpg" alt="..." width="45"><span class="icon bg-primary text-white"><i class="las la-check-double"></i></span>
+                                    </div>
+                                    <!-- Auction Image -->
+                                    <div class="card-img-holder rounded overflow-hidden"><img class="img-fluid rounded w-100" src="static/picture/item-12.jpg" alt=""></div>
+                                </div>
+                                <!-- Auction Title -->
+                                <p class="fw-bold mb-3"><a class="text-reset" href="item.html">Feeding time</a></p>
+                                <!-- Auction Price -->
+                                <p class="text-sm text-muted fw-normal mb-2 d-flex align-items-center">
+                                    <span class="icon bg-primary text-white me-2"><i class="lab la-bitcoin fa-fw"></i></span><span>Price: </span><span class="text-primary ms-2">0.08 ETH</span><span class="ms-2">1/20</span>
+                                </p>
+                                <!-- Auction Counter -->
+                                <div class="p-2 counter d-flex align-items-center justify-content-center text-center counter-1" data-date="14-12-2021" data-time="12:00">
+                                    <div class="day counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="hour counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="min counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="sec counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                </div>
+                                <!-- Separator -->
+                                <div class="my-3 pt-1 bg-body rounded-pill"></div>
+                                <!-- Place a Bid -->
+                                <a class="btn btn-primary btn-sm w-100" href="">Place your bid</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <!-- Live Action -->
+                        <div class="card rounded shadow-sm">
+                            <div class="card-body p-3 position-relative">
+                                <div class="position-relative mb-4 shadow">
+                                    <!-- Author Image -->
+                                    <div class="author z-index-20">
+                                        <img class="img-fluid rounded-circle" src="static/picture/author-2.jpg" alt="..." width="45"><span class="icon bg-primary text-white"><i class="las la-check-double"></i></span>
+                                    </div>
+                                    <!-- Auction Image -->
+                                    <div class="card-img-holder rounded overflow-hidden"><img class="img-fluid rounded w-100" src="static/picture/item-11.jpg" alt=""></div>
+                                </div>
+                                <!-- Auction Title -->
+                                <p class="fw-bold mb-3"><a class="text-reset" href="item.html">Metaverse Goddess</a></p>
+                                <!-- Auction Price -->
+                                <p class="text-sm text-muted fw-normal mb-2 d-flex align-items-center">
+                                    <span class="icon bg-primary text-white me-2"><i class="lab la-bitcoin fa-fw"></i></span><span>Price: </span><span class="text-primary ms-2">0.05 ETH</span><span class="ms-2">1/22</span>
+                                </p>
+                                <!-- Auction Counter -->
+                                <div class="p-2 counter d-flex align-items-center justify-content-center text-center counter-2" data-date="18-11-2021" data-time="12:00">
+                                    <div class="day counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="hour counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="min counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="sec counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                </div>
+                                <!-- Separator -->
+                                <div class="my-3 pt-1 bg-body rounded-pill"></div>
+                                <!-- Place a Bid -->
+                                <a class="btn btn-primary btn-sm w-100" href="">Place your bid</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <!-- Live Action -->
+                        <div class="card rounded shadow-sm">
+                            <div class="card-body p-3 position-relative">
+                                <div class="position-relative mb-4 shadow">
+                                    <!-- Author Image -->
+                                    <div class="author z-index-20">
+                                        <img class="img-fluid rounded-circle" src="static/picture/author-3.jpg" alt="..." width="45"><span class="icon bg-primary text-white"><i class="las la-check-double"></i></span>
+                                    </div>
+                                    <!-- Auction Image -->
+                                    <div class="card-img-holder rounded overflow-hidden"><img class="img-fluid rounded w-100" src="static/picture/item-10.jpg" alt=""></div>
+                                </div>
+                                <!-- Auction Title -->
+                                <p class="fw-bold mb-3"><a class="text-reset" href="item.html">Funky fashion</a></p>
+                                <!-- Auction Price -->
+                                <p class="text-sm text-muted fw-normal mb-2 d-flex align-items-center">
+                                    <span class="icon bg-primary text-white me-2"><i class="lab la-bitcoin fa-fw"></i></span><span>Price: </span><span class="text-primary ms-2">0.06 ETH</span><span class="ms-2">1/11</span>
+                                </p>
+                                <!-- Auction Counter -->
+                                <div class="p-2 counter d-flex align-items-center justify-content-center text-center counter-3" data-date="15-1-2022" data-time="12:00">
+                                    <div class="day counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="hour counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="min counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="sec counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                </div>
+                                <!-- Separator -->
+                                <div class="my-3 pt-1 bg-body rounded-pill"></div>
+                                <!-- Place a Bid -->
+                                <a class="btn btn-primary btn-sm w-100" href="">Place your bid</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <!-- Live Action -->
+                        <div class="card rounded shadow-sm">
+                            <div class="card-body p-3 position-relative">
+                                <div class="position-relative mb-4 shadow">
+                                    <!-- Author Image -->
+                                    <div class="author z-index-20">
+                                        <img class="img-fluid rounded-circle" src="static/picture/author-4.jpg" alt="..." width="45"><span class="icon bg-primary text-white"><i class="las la-check-double"></i></span>
+                                    </div>
+                                    <!-- Auction Image -->
+                                    <div class="card-img-holder rounded overflow-hidden"><img class="img-fluid rounded w-100" src="static/picture/item-9.jpg" alt=""></div>
+                                </div>
+                                <!-- Auction Title -->
+                                <p class="fw-bold mb-3"><a class="text-reset" href="item.html">Modern abstract art</a></p>
+                                <!-- Auction Price -->
+                                <p class="text-sm text-muted fw-normal mb-2 d-flex align-items-center">
+                                    <span class="icon bg-primary text-white me-2"><i class="lab la-bitcoin fa-fw"></i></span><span>Price: </span><span class="text-primary ms-2">0.03 ETH</span><span class="ms-2">1/15</span>
+                                </p>
+                                <!-- Auction Counter -->
+                                <div class="p-2 counter d-flex align-items-center justify-content-center text-center counter-4" data-date="14-7-2022" data-time="12:00">
+                                    <div class="day counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="hour counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="min counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="sec counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                </div>
+                                <!-- Separator -->
+                                <div class="my-3 pt-1 bg-body rounded-pill"></div>
+                                <!-- Place a Bid -->
+                                <a class="btn btn-primary btn-sm w-100" href="">Place your bid</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <!-- Live Action -->
+                        <div class="card rounded shadow-sm">
+                            <div class="card-body p-3 position-relative">
+                                <div class="position-relative mb-4 shadow">
+                                    <!-- Author Image -->
+                                    <div class="author z-index-20">
+                                        <img class="img-fluid rounded-circle" src="static/picture/author-1.jpg" alt="..." width="45"><span class="icon bg-primary text-white"><i class="las la-check-double"></i></span>
+                                    </div>
+                                    <!-- Auction Image -->
+                                    <div class="card-img-holder rounded overflow-hidden"><img class="img-fluid rounded w-100" src="static/picture/item-8.jpg" alt=""></div>
+                                </div>
+                                <!-- Auction Title -->
+                                <p class="fw-bold mb-3"><a class="text-reset" href="item.html">Portrait study</a></p>
+                                <!-- Auction Price -->
+                                <p class="text-sm text-muted fw-normal mb-2 d-flex align-items-center">
+                                    <span class="icon bg-primary text-white me-2"><i class="lab la-bitcoin fa-fw"></i></span><span>Price: </span><span class="text-primary ms-2">0.08 ETH</span><span class="ms-2">1/20</span>
+                                </p>
+                                <!-- Auction Counter -->
+                                <div class="p-2 counter d-flex align-items-center justify-content-center text-center counter-5" data-date="14-12-2021" data-time="12:00">
+                                    <div class="day counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="hour counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="min counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="sec counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                </div>
+                                <!-- Separator -->
+                                <div class="my-3 pt-1 bg-body rounded-pill"></div>
+                                <!-- Place a Bid -->
+                                <a class="btn btn-primary btn-sm w-100" href="">Place your bid</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <!-- Live Action -->
+                        <div class="card rounded shadow-sm">
+                            <div class="card-body p-3 position-relative">
+                                <div class="position-relative mb-4 shadow">
+                                    <!-- Author Image -->
+                                    <div class="author z-index-20">
+                                        <img class="img-fluid rounded-circle" src="static/picture/author-2.jpg" alt="..." width="45"><span class="icon bg-primary text-white"><i class="las la-check-double"></i></span>
+                                    </div>
+                                    <!-- Auction Image -->
+                                    <div class="card-img-holder rounded overflow-hidden"><img class="img-fluid rounded w-100" src="static/picture/item-7.jpg" alt=""></div>
+                                </div>
+                                <!-- Auction Title -->
+                                <p class="fw-bold mb-3"><a class="text-reset" href="item.html">Nerdy cute girl</a></p>
+                                <!-- Auction Price -->
+                                <p class="text-sm text-muted fw-normal mb-2 d-flex align-items-center">
+                                    <span class="icon bg-primary text-white me-2"><i class="lab la-bitcoin fa-fw"></i></span><span>Price: </span><span class="text-primary ms-2">0.05 ETH</span><span class="ms-2">1/22</span>
+                                </p>
+                                <!-- Auction Counter -->
+                                <div class="p-2 counter d-flex align-items-center justify-content-center text-center counter-6" data-date="18-11-2021" data-time="12:00">
+                                    <div class="day counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="hour counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="min counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="sec counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                </div>
+                                <!-- Separator -->
+                                <div class="my-3 pt-1 bg-body rounded-pill"></div>
+                                <!-- Place a Bid -->
+                                <a class="btn btn-primary btn-sm w-100" href="">Place your bid</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <!-- Live Action -->
+                        <div class="card rounded shadow-sm">
+                            <div class="card-body p-3 position-relative">
+                                <div class="position-relative mb-4 shadow">
+                                    <!-- Author Image -->
+                                    <div class="author z-index-20">
+                                        <img class="img-fluid rounded-circle" src="static/picture/author-3.jpg" alt="..." width="45"><span class="icon bg-primary text-white"><i class="las la-check-double"></i></span>
+                                    </div>
+                                    <!-- Auction Image -->
+                                    <div class="card-img-holder rounded overflow-hidden"><img class="img-fluid rounded w-100" src="static/picture/item-6.jpg" alt=""></div>
+                                </div>
+                                <!-- Auction Title -->
+                                <p class="fw-bold mb-3"><a class="text-reset" href="item.html">Tlaloc aztec deity</a></p>
+                                <!-- Auction Price -->
+                                <p class="text-sm text-muted fw-normal mb-2 d-flex align-items-center">
+                                    <span class="icon bg-primary text-white me-2"><i class="lab la-bitcoin fa-fw"></i></span><span>Price: </span><span class="text-primary ms-2">0.06 ETH</span><span class="ms-2">1/11</span>
+                                </p>
+                                <!-- Auction Counter -->
+                                <div class="p-2 counter d-flex align-items-center justify-content-center text-center counter-7" data-date="15-1-2022" data-time="12:00">
+                                    <div class="day counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="hour counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="min counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="sec counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                </div>
+                                <!-- Separator -->
+                                <div class="my-3 pt-1 bg-body rounded-pill"></div>
+                                <!-- Place a Bid -->
+                                <a class="btn btn-primary btn-sm w-100" href="">Place your bid</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <!-- Live Action -->
+                        <div class="card rounded shadow-sm">
+                            <div class="card-body p-3 position-relative">
+                                <div class="position-relative mb-4 shadow">
+                                    <!-- Author Image -->
+                                    <div class="author z-index-20">
+                                        <img class="img-fluid rounded-circle" src="static/picture/author-4.jpg" alt="..." width="45"><span class="icon bg-primary text-white"><i class="las la-check-double"></i></span>
+                                    </div>
+                                    <!-- Auction Image -->
+                                    <div class="card-img-holder rounded overflow-hidden"><img class="img-fluid rounded w-100" src="static/picture/item-5.jpg" alt=""></div>
+                                </div>
+                                <!-- Auction Title -->
+                                <p class="fw-bold mb-3"><a class="text-reset" href="item.html">A beautiful frog</a></p>
+                                <!-- Auction Price -->
+                                <p class="text-sm text-muted fw-normal mb-2 d-flex align-items-center">
+                                    <span class="icon bg-primary text-white me-2"><i class="lab la-bitcoin fa-fw"></i></span><span>Price: </span><span class="text-primary ms-2">0.03 ETH</span><span class="ms-2">1/15</span>
+                                </p>
+                                <!-- Auction Counter -->
+                                <div class="p-2 counter d-flex align-items-center justify-content-center text-center counter-8" data-date="14-7-2022" data-time="12:00">
+                                    <div class="day counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="hour counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="min counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                    <div class="sec counter-item"><strong class="num"></strong><small class="small word"></small></div>
+                                </div>
+                                <!-- Separator -->
+                                <div class="my-3 pt-1 bg-body rounded-pill"></div>
+                                <!-- Place a Bid -->
+                                <a class="btn btn-primary btn-sm w-100" href="">Place your bid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation-->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination mb-0 justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#!" aria-label="Previous"><span aria-hidden="true">«</span></a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                        <li class="page-item active"><a class="page-link" href="#!">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#!">6</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#!" aria-label="Next"><span aria-hidden="true">»</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+
+
+        <!-- MAIN FOOTER -->
+        <footer class="footer bg-map bg-dark">
+            <div class="container py-5 z-index-20">
+                <div class="row pt-5">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h6>Marketplace</h6>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">All NFTs</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Art</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Music</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Domain Names</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Virtual World</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h6>Resources</h6>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Help Center</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Partners</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Suggestions</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Discord</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Docs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h6>Community</h6>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Community</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Documentation</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Brand Assets</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Blog</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Forum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h6>Newsletter</h6>
+                        <p class="text-sm text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint facilis.</p>
+                        <form action="#!">
+                            <div class="input-group shadow-sm bg-body rounded">
+                                <input class="form-control border-0 bg-none shadow-0" type="email" name="email" autocomplete="off" placeholder="Enter your email address...">
+                                <button class="btn btn-primary btn-sm" type="submit"><i class="las la-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator-->
+            <div class="container">
+                <div class="pt-1 bg-body rounded-pill"></div>
+            </div>
+
+            <!-- Copyrights-->
+            <div class="container py-4">
+                <div class="row text-center">
+                    <p class="text-muted text-sm mb-0">© 2021 Medora.io All rights reserved <span class="text-primary">BootdevTemplates.</span></p>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="static/js/bootstrap.bundle.min.js"></script>
+        <script src="static/js/particles.js"></script>
+        <script src="static/js/choices.js"></script>
+        <script src="static/js/mixitup.min.js"></script>
+        <script src="static/js/dropzone.js"></script>
+        <script src="static/js/swiper-bundle.min.js"></script>
+        <script src="static/js/countdown.js"></script>
+        <script>
+            /* ======================================
+               IMPORT DIFFERNT PARTICLE.JS JSON FILES
+            ======================================== */
+            function compareViewports(jsonFile, jsonAltFile) {
+                if (window.innerWidth > 768) {
+                    particlesJS.load("particles-js", `${jsonFile}`, function () {
+                        console.log("particles is moving");
+                    });
+                } else {
+                    particlesJS.load("particles-js", `${jsonAltFile}`, function () {
+                        console.log("particles is moving");
+                    });
+                }
+            }
+            // Replace by local JSON file by replace this line with the below line
+            // compareViewports('js/particles.js', 'js/particles.mb.json');
+            compareViewports("https://gist.githubusercontent.com/mhmdhasan/d2222d213f5e71a8a5d76e375d78ec00/raw/8693c75cae8cabaabec26eae4c5f0843a774760b/particles.json", "https://gist.githubusercontent.com/mhmdhasan/6ff8987be59d53e491abdbccc1a34785/raw/d5d8f489d2eaa6e8169cfb563003665694f2ceb0/particles.mb.json");
+        </script>
+        <script src="static/js/theme.js"></script>
+        <script>
+            /* ======================================
+                COUNTER VARIANTS
+             ======================================== */
+            const auc1 = new countdown({ target: ".counter-1" });
+            const auc2 = new countdown({ target: ".counter-2" });
+            const auc3 = new countdown({ target: ".counter-3" });
+            const auc4 = new countdown({ target: ".counter-4" });
+            const auc5 = new countdown({ target: ".counter-5" });
+            const auc6 = new countdown({ target: ".counter-6" });
+            const auc7 = new countdown({ target: ".counter-7" });
+            const auc8 = new countdown({ target: ".counter-8" });
+            const auc = new countdown({ target: ".counter-auc" });
+        </script>
+        
+    </body>
+</html>

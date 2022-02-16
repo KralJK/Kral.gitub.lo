@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Medora | Bootstrap NFT Marketplace</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="all,follow">
+        <!-- Google fonts-->
+        <link rel="stylesheet" href="static/css/css2.css">
+        <!-- Line awesome-->
+        <link rel="stylesheet" href="static/css/line-awesome.min.css">
+        <!-- Choices.js-->
+        <link rel="stylesheet" href="static/css/choices.min.css">
+        <!-- Dropzone-->
+        <link rel="stylesheet" href="static/css/dropzone.css">
+        <!-- Swiper.js-->
+        <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+        <!-- Theme stylesheet-->
+        <link rel="stylesheet" href="static/css/style.default.css" id="theme-stylesheet">
+        <!-- Custom stylesheet - for your changes-->
+        <link rel="stylesheet" href="static/css/custom.css">
+
+        <!-- Tweaks for older IEs-->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+            <div class="container">
+
+                <!-- Navbar Brand -->
+                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="static/picture/logo.svg" alt="CR" width="140"></a>
+
+                <!-- Navbar Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Collapse -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-lg-row align-items-lg-center">
+                        <!-- Navigation Item -->
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                        <!-- Navigation Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="exploreDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end fade-down" aria-labelledby="exploreDropdown">
+                                <li><a class="dropdown-item" href="explore.html">Explore 1</a></li>
+                                <li><a class="dropdown-item" href="explore-2.html">Explore 2</a></li>
+                                <li><a class="dropdown-item" href="explore-3.html">Explore 3</a></li>
+                            </ul>
+                        </li>
+                        <!-- Navigation Dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end fade-down" aria-labelledby="pagesDropdown">
+                                <li><a class="dropdown-item" href="auctions.html">Auctions</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                <li><a class="dropdown-item" href="author.html">Author</a></li>
+                                <li><a class="dropdown-item" href="wallet.html">Wallet</a></li>
+                                <li><a class="dropdown-item" href="">Create</a></li>
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            </ul>
+                        </li>
+                        <!-- Navigation Item -->
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="auctions.html">Auctions</a></li>
+                        <!-- Navigation Item -->
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+                        <!-- Navigation Item -->
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn btn-gradient-primary btn-sm px-3 d-lg-flex align-items-center" href="wallet.html"> <i class="las la-wallet me-2 transform-none"></i>Connect wallet </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+
+        <!-- HERO SECTION-->
+        <section class="py-5 bg-dark position-relative">
+            <div id="particles-js"></div>
+            <div class="container py-5 mt-5 z-index-20">
+                <h1 class="text-center">Create Item</h1>
+                <!-- Breadcrumb-->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item">
+                            <a class="text-decoration-none d-flex align-items-center" href="#"> <i class="las la-home la-sm me-1"></i>Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Create Item</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+
+
+        <!-- CREATE ITEM SECTION -->
+        <section class="py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-8">
+
+                        <!-- Upload File Header -->
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon icon-md me-2 flex-shrink-0 bg-primary rounded-sm text-white"><i class="las la-cloud-upload-alt"></i></div>
+                            <h2 class="h5 mb-0">Upload file</h2>
+                        </div>
+
+                        <!-- Upload File Form -->
+                        <form class="dropzone rounded bg-dark d-flex justify-content-center mb-5" id="demo-upload" action="/upload">
+                            <div class="dz-message py-5">
+                                <i class="las la-image la-3x text-muted"></i>
+                                <p class="text-muted">Drop files here or click to upload.</p>
+                            </div>
+                        </form>
+
+                        <!-- Select Method Header-->
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon icon-md me-2 flex-shrink-0 bg-primary rounded-sm text-white"><i class="las la-th-large"></i></div>
+                            <h2 class="h5 mb-0">Select Method</h2>
+                        </div>
+
+                        <!-- Select Method Form -->
+                        <form class="p-4 p-lg-5 bg-dark" action="#!">
+
+                            <!-- Form Navigation -->
+                            <div class="item-type">
+                                <div class="btn-group flex-column flex-md-row w-100" role="group" aria-label="Basic radio toggle button group">
+                                    <input class="btn-check" id="fixedPrice" type="radio" name="btnradio" checked="">
+                                    <label class="btn btn-outline-secondary m-1 rounded-sm text-gray-400 flex-fill" for="fixedPrice"><i class="text-primary las la-tag me-2"></i>Fixed Price</label>
+                                    <input class="btn-check" id="timedAuction" type="radio" name="btnradio">
+                                    <label class="btn btn-outline-secondary m-1 rounded-sm text-gray-400 flex-fill" for="timedAuction"><i class="text-primary las la-hourglass-half me-2"></i>Timed Auction</label>
+                                    <input class="btn-check" id="openForBids" type="radio" name="btnradio">
+                                    <label class="btn btn-outline-secondary m-1 rounded-sm text-gray-400 flex-fill" for="openForBids"><i class="text-primary las la-user-friends me-2"></i>Open for Bids </label>
+                                </div>
+                            </div>
+
+                            <!-- Form Elements -->
+                            <div class="row gy-3 py-4">
+                                <!-- Timed Auction Method Elements -->
+                                <div class="col-12" data-form="timedAuction">
+                                    <div class="row gy-3">
+                                        <div class="col-lg-12">
+                                            <label class="form-label text-gray-400" for="maxBid"> Maximum Bid</label>
+                                            <div class="input-group">
+                                                <div class="input-group-text border-end-0 pe-0 bd-dark-lighter bg-none"><i class="text-primary las la-hand-holding-usd"></i></div>
+                                                <input class="form-control shadow-0 border-start-0 bd-dark-lighter bg-none" type="text" autocomplete="off" name="maxBid" id="maxBid" placeholder="Enter maximum bid">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label class="form-label text-gray-400" for="starDate"> Starting Date</label>
+                                            <div class="input-group">
+                                                <div class="input-group-text border-end-0 pe-0 bd-dark-lighter bg-none"><i class="text-primary las la-hourglass-half"></i></div>
+                                                <input class="form-control shadow-0 border-start-0 bd-dark-lighter bg-none" type="date" name="starDate" id="starDate">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label class="form-label text-gray-400" for="endDate"> Ending Date</label>
+                                            <div class="input-group">
+                                                <div class="input-group-text border-end-0 pe-0 bd-dark-lighter bg-none"><i class="text-primary las la-hourglass-half"></i></div>
+                                                <input class="form-control shadow-0 bd-dark-lighter bg-none border-start-0" type="date" name="endDate" id="endDate">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Fixed Price Method Elements -->
+                                <div class="col-12" data-form="fixedPrice">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <label class="form-label text-gray-400" for="price"> Price</label>
+                                            <div class="input-group">
+                                                <div class="input-group-text border-end-0 pe-0 bd-dark-lighter bg-none"><i class="text-primary las la-hand-holding-usd"></i></div>
+                                                <input class="form-control shadow-0 border-start-0 bd-dark-lighter bg-none" type="text" autocomplete="off" name="price" id="price" placeholder="Enter price for one item (ETH)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Open For Bids Method Elements -->
+                                <div class="col-12 mb-2" data-form="openForBids">
+                                    <div class="row gy-3">
+                                        <div class="col-lg-12">
+                                            <label class="form-label text-gray-400" for="title"> Title</label>
+                                            <div class="input-group">
+                                                <div class="input-group-text border-end-0 pe-0 bd-dark-lighter bg-none"><i class="text-primary las la-user-edit"></i></div>
+                                                <input class="form-control shadow-0 border-start-0 bd-dark-lighter bg-none" type="text" autocomplete="off" name="title" id="title" placeholder="e.g. Crypto Funk">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <label class="form-label text-gray-400" for="description"> Description</label>
+                                            <textarea class="form-control shadow-0 bd-dark-lighter bg-none" rows="3" name="description" id="description" placeholder="e.g. This is a very cool item"></textarea>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <label class="form-label text-gray-400" for="royalties"> Royalties</label>
+                                            <div class="input-group">
+                                                <div class="input-group-text border-end-0 pe-0 bd-dark-lighter bg-none"><i class="text-primary las la-percentage"></i></div>
+                                                <input class="form-control shadow-0 border-start-0 bd-dark-lighter bg-none" type="text" autocomplete="off" name="royalties" id="royalties" placeholder="Suggested: 0, 10%, 20%, 30%, maximum 70%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Submit -->
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit"><i class="las la-plus-circle me-2"></i>Create Item</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Preview Item -->
+                    <div class="col-lg-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon icon-md me-2 flex-shrink-0 bg-primary rounded-sm text-white"><i class="las la-eye"></i></div>
+                            <h2 class="h5 mb-0">Preview Item</h2>
+                        </div>
+
+                        <!-- Nft Item-->
+                        <div class="card rounded shadow-sm">
+                            <div class="card-body p-3 position-relative">
+                                <div class="position-relative mb-4 shadow">
+                                    <!-- Author Image -->
+                                    <div class="author z-index-20">
+                                        <img class="img-fluid rounded-circle" src="static/picture/author-1.jpg" alt="..." width="45"><span class="icon bg-primary text-white"><i class="las la-check-double"></i></span>
+                                    </div>
+                                    <!-- Item Image -->
+                                    <div class="card-img-holder rounded overflow-hidden"><img class="img-fluid rounded w-100" src="static/picture/item-1.jpg" alt=""></div>
+                                </div>
+                                <!-- Item Title-->
+                                <p class="fw-bold mb-3"><a class="text-reset stretched-link" href="item.html"> Sunny day</a></p>
+                                <!-- Title Price -->
+                                <p class="text-sm text-muted fw-normal mb-2 d-flex align-items-center">
+                                    <span class="icon bg-primary text-white me-2"><i class="lab la-bitcoin fa-fw"></i></span><span>Price: </span><span class="text-primary ms-2">0.08 ETH</span><span class="ms-2">1/20</span>
+                                </p>
+                                <!-- Highest Bid -->
+                                <p class="text-sm text-muted fw-normal d-flex align-items-center">
+                                    <span class="icon bg-primary text-white me-2"><i class="las la-wallet fa-fw"></i></span><span>Highest bid: </span><span class="text-primary ms-2">0.081 ETH</span>
+                                </p>
+                                <!-- Separator -->
+                                <div class="my-3 pt-1 bg-body rounded-pill"></div>
+                                <!-- Item Footer -->
+                                <ul class="list-unstyled d-flex align-items-center justify-content-between fw-normal text-sm text-muted mb-0">
+                                    <li class="d-flex align-items-center"><i class="la-sm text-primary las la-clock me-2 text-primary"></i>12Hrs ago</li>
+                                    <li class="d-flex align-items-center"><i class="la-sm text-primary las la-heart me-2 text-primary"></i>42 Likes</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- MAIN FOOTER -->
+        <footer class="footer bg-map bg-dark">
+            <div class="container py-5 z-index-20">
+                <div class="row pt-5">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h6>Marketplace</h6>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">All NFTs</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Art</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Music</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Domain Names</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Virtual World</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h6>Resources</h6>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Help Center</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Partners</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Suggestions</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Discord</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Docs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h6>Community</h6>
+                        <ul class="list-unstyled text-muted mb-0">
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Community</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Documentation</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Brand Assets</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Blog</a></li>
+                            <li class="mb-1"><a class="text-sm text-reset" href="#">Forum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h6>Newsletter</h6>
+                        <p class="text-sm text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sint facilis.</p>
+                        <form action="#!">
+                            <div class="input-group shadow-sm bg-body rounded">
+                                <input class="form-control border-0 bg-none shadow-0" type="email" name="email" autocomplete="off" placeholder="Enter your email address...">
+                                <button class="btn btn-primary btn-sm" type="submit"><i class="las la-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator-->
+            <div class="container">
+                <div class="pt-1 bg-body rounded-pill"></div>
+            </div>
+
+            <!-- Copyrights-->
+            <div class="container py-4">
+                <div class="row text-center">
+                    <p class="text-muted text-sm mb-0">© 2021 Medora.io All rights reserved <span class="text-primary">BootdevTemplates.</span></p>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="static/js/bootstrap.bundle.min.js"></script>
+        <script src="static/js/particles.js"></script>
+        <script src="static/js/choices.js"></script>
+        <script src="static/js/mixitup.min.js"></script>
+        <script src="static/js/dropzone.js"></script>
+        <script src="static/js/swiper-bundle.min.js"></script>
+        <script src="static/js/countdown.js"></script>
+        <script>
+            /* ======================================
+             IMPORT DIFFERNT PARTICLE.JS JSON FILES
+           ======================================== */
+            function compareViewports(jsonFile, jsonAltFile) {
+                if (window.innerWidth > 768) {
+                    particlesJS.load("particles-js", `${jsonFile}`, function () {
+                        console.log("particles is moving");
+                    });
+                } else {
+                    particlesJS.load("particles-js", `${jsonAltFile}`, function () {
+                        console.log("particles is moving");
+                    });
+                }
+            }
+            // Replace by local JSON file by replace this line with the below line
+            // compareViewports('js/particles.js', 'js/particles.mb.json');
+            compareViewports("https://gist.githubusercontent.com/mhmdhasan/d2222d213f5e71a8a5d76e375d78ec00/raw/8693c75cae8cabaabec26eae4c5f0843a774760b/particles.json", "https://gist.githubusercontent.com/mhmdhasan/6ff8987be59d53e491abdbccc1a34785/raw/d5d8f489d2eaa6e8169cfb563003665694f2ceb0/particles.mb.json");
+        </script>
+        <script src="static/js/theme.js"></script>
+
+    </body>
+</html>
